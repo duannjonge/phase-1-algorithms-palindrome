@@ -1,6 +1,19 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let outPutResult=word.split("").reverse().join("")
+
+  if (outPutResult === word){
+
+    return true;
+  }else{
+
+    return false;
+  }
+ 
 }
+
+isPalindrome("abba");
+isPalindrome("racecar");
 
 /* 
   Add your pseudocode here
@@ -20,6 +33,9 @@ if (require.main === module) {
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("abba"));
 }
 
 module.exports = isPalindrome;
